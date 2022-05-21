@@ -1,0 +1,271 @@
+/*----------Body font ayarları-----------*/
+html{
+    background: url(../image/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  body{
+    font-family: Open Sans,sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  /*--------Arkada ki ana div-------------*/
+  #ana {
+    width: 1280px;
+    height: 2000px;
+    background: linear-gradient(#cefa3ba7,#f2964ba7);
+    margin: auto;
+  }
+  /*--------- Menü kodları--------------*/
+  .menu{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 0;
+    list-style: none;
+    float: left;
+  }
+  a{
+    text-decoration: none;
+  }
+  ul.menu{
+    background:linear-gradient(to right, #EDAEF9, #81B1FA );
+    height: 50px;
+  }
+  ul.menu li{
+    float: left;
+    border-right: 4px solid rgba(0,0,0.1);
+  }
+  ul.menu li:first-child{
+    border-left: 4px solid rgba(0,0,0.1);
+  }
+  ul.menu li a{
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    width: 251px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 50px;
+  }
+  /*----------------En üstte ki logonun kodları------------------------*/
+#logomenu{
+    background:linear-gradient(to right, #da4cda,#27c8d3);
+    width:1280px;
+    height: 130px;
+    float: left;
+  }
+  #logo{
+    margin-left: 470px;
+    height: 120px;
+    width: 300px;
+  }
+  /* Büyük Resim*/
+  .card {
+    width: 500px;
+    height: 900px;
+    --border-radius: 15px;
+    --border-width: 6px;
+    appearance: none;
+    position: absolute;
+    padding: 1em 2em;
+    border: 0;
+    background: rgb(5, 5, 22);
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+    margin-top: 200px;
+    background: url(../image/tr2.jpg);
+    border-radius: 15px;
+   }
+   
+   .card::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+       #488cfb,
+       #29dbbc,
+       #ddf505,
+       #ff9f0e,
+       #e440bb,
+       #655adc,
+       #488cfb
+     );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+   }
+   
+   .card:hover::after {
+    animation-play-state: running;
+   }
+   
+   @keyframes rotate-hue {
+    to {
+     filter: hue-rotate(1turn);
+    }
+   }
+   
+   .card,
+   .card::after {
+    box-sizing: border-box;
+   }
+   
+   .card:active {
+    --border-width: 5px;
+   }
+  .aciklama{
+      width: 700px;
+      height: 900px;
+      position: absolute;
+      margin-left: 550px;
+      margin-top:200px;
+  }
+  .aciklama h2{
+      text-align: center;
+  }
+  .aciklama p{
+      font-size: 25px;
+      text-align: center;
+      text-decoration: none;
+  }
+  /* Bölümler ve butonlar*/
+  .bolumler{
+      position: absolute;
+      margin-top: 1300px;
+      margin-left: 100px;
+      border:4px dotted rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.254);
+      width: 1050px;
+      height: 500px;
+
+  }
+  .bolumler h1{
+      text-align: center;
+      font-size: 45px;
+  }
+   /* BUTON ANİMASYONLARI */
+   button {
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: #ae00ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+   }
+   
+   button:hover {
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.6s;
+   }
+   
+   button span {
+    position: absolute;
+   }
+   
+   button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff);
+   }
+   
+   button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+   }
+   
+   button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff);
+   }
+   
+   button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+   }
+   
+   button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffffff);
+   }
+   
+   button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+   }
+   
+   button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ffffff);
+   }
+   
+   button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+   }
+   
+   button:active {
+    background: #00af55;
+    background: linear-gradient(to top right, #ae00af, #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    transition: 0.1s;
+   }
+   
+   button:active span:nth-child(1) 
+   span:nth-child(2) 
+   span:nth-child(2) 
+   span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+   }
+   
+   .a1{
+    margin-left: 20px;
+    margin-top: 20px;
+   }
+   .a1 a{
+     color: rgb(3, 105, 249);
+   }

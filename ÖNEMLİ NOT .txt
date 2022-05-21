@@ -1,0 +1,7 @@
+Siteyi yaparken 1366x768 çözünürlüğünde çalıştım.
+Ve Opera GX tarayıcı kullandığımdan kayma olmaması için F11 basıp
+incelemeniz daha iyi olur.
+
+Sitenin genişliği 1280 uzunluğu sayfadan sayfaya değişiklik gösteriyor.
+
+Sitenin başlangıcı index.html den itibarendir.

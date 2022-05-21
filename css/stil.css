@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+.yazi1{
+    color:white;
+    font-size: 60px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    animation: yazi-animate 3s ease;
+    background-color: black;
+}
+.yazi2{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+.yazi2 a{
+    color:#bb287e;
+    text-decoration: none;
+}
+@keyframes yazi-animate{
+    0%{
+        margin-bottom: -40px;
+        letter-spacing: 8px;
+    }
+    30%{
+        margin-bottom: -40px;
+        letter-spacing: 25px;
+    }
+    90%{
+        margin-bottom: -40px;
+        letter-spacing: 8px;
+    }
+}
